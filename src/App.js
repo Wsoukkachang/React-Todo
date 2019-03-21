@@ -70,20 +70,22 @@ class App extends React.Component {
 
     return (
 
-      <div className="App">
+    <div className="App">
       <div className="header">
-        <h1>Todo list: MVP</h1>
+        <h1>Todo List: MVP</h1>
+
         <TodoList
           tasks={this.state.tasks}
           toggleTodo={this.toggleTodo}
         />
-      </div>
-
-      <div className= "form-container">
+        
+        <div className= "form-container">
         <TodoForm addTodo={this.addTodo} />
         <button className="clear-btn" onClick={this.clearCompleted}>
           Clear Completed
         </button>
+        </div>
+
       </div>
     </div>
     );
