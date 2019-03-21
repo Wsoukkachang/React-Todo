@@ -2,10 +2,10 @@ import React from "react";
 
 const Todo = props => {
     return (
-        <div>
-            <strong>task:</strong> {props.data.task}
-            <strong>id:</strong> {props.data.id}
-            <strong>completed:</strong> {props.data.completed}
+        <div className={`todo${props.listTodo.completed ? " completed" : ""}`}
+        onClick={() => props.toggleTodo(props.listTodo.id)} //Anonymous Callback Function Clarification
+        >
+          <p>{props.listTodo.task}</p>
         </div>
     )
 }
