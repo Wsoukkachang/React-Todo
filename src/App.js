@@ -65,6 +65,18 @@ class App extends React.Component {
     });
   };
 
+  // selectAll = e => {
+  //   e.preventDefault();
+  //   console.log("select all");
+  //   this.setState({
+  //     tasks: this.state.tasks.forEach({
+  //       return {...task,
+  //         completed: !todo.completed};
+  //     });
+  //   });
+  // };
+
+
 
   render() {
 
@@ -79,14 +91,21 @@ class App extends React.Component {
           toggleTodo={this.toggleTodo}
         />
         
-        <div className= "form-container">
+      </div>
+
+      <div className= "form-container">
         <TodoForm addTodo={this.addTodo} />
+
         <button className="clear-btn" onClick={this.clearCompleted}>
           Clear Completed
         </button>
-        </div>
+
+        <button className="selectAll-btn" onClick={this.selectAll}>
+          Select All
+        </button>
 
       </div>
+      
     </div>
     );
   };
