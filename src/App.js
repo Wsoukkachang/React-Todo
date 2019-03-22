@@ -100,9 +100,9 @@ class App extends React.Component {
           Clear Completed
         </button>
 
-        <button className="selectAll-btn" onClick={this.selectAll}>
+        {/* <button className="selectAll-btn" onClick={this.selectAll}>
           Select All
-        </button>
+        </button> */}
 
       </div>
       
