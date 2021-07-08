@@ -1,0 +1,73 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 36px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+text-align: left;
+}
+
+.todo-list {
+display: flex;
+flex-flow: column;
+width: 50%;
+}
+
+.todo {
+background-color: #008d3f;
+width: 75%;
+text-align: left;
+margin: 8px 0;
+padding-left: 8px;
+}
+
+.todo.completed {
+background-color: #678b77;
+text-decoration: line-through;
+}
+
+form {
+display: flex;
+}
+
+form > input {
+background-color: #2d2d37;
+border: 0;
+padding: 6px 0;
+font-size: 1rem;
+outline: 0;
+color: white;
+border-bottom: 1px solid #008d3f;
+margin-right: 16px;
+}
+
+button {
+background-color: #008d3f;
+border: 1px solid #008d3f;
+color: white;
+width: 25%;
+font-size: 16px;
+padding: 6px 14px;
+}
+
+input::placeholder {
+color: #008d3f;
+opacity: 1;
+}
+
+.clear-btn {
+}
+
+.form-container {
+    display: flex;
+    margin-top: 16px;
+}
